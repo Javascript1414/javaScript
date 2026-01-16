@@ -16,9 +16,35 @@ let g=-22 //output -10110
 console.log("Logical Not Operator=",(~g))
 //OUTPUT 21 10101
 
-let h=15 //OUTPUT 1111
-let i=20 //OUTPUT 10100
-console.log("Logical Xor Operator=",h^i)
-//
+let h=80<<2
+console.log("Left Shift Operator=",h)
+//output 320
+
+let i=136<<2
+console.log("Left Shift Operator=",i)
+//output 544
+
+let j=96<<2
+console.log("Left Shift Operator=",j)
+//output 384
+
+let k=96<<2
+console.log("Left Shift Operator=",k)
+//output 384
+
+let i=92<<2
+console.log("Left Shift Operator=",i)
+//output 368
+
+let l=89>>3
+console.log("Right Shift Operator=",l)
+//output 11
+
+let m=100>>3
+console.log("Right Shift Operator=",m)
+//output 12
+
+
+
 
  
