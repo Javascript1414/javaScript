@@ -18,19 +18,19 @@ console.log("Logical Not Operator=",(~g))
 
 let h=80<<2
 console.log("Left Shift Operator=",h)
-//output 320
+//output 320 //101000000
 
 let i=136<<2
 console.log("Left Shift Operator=",i)
-//output 544
+//output 544 //100100000
 
 let j=96<<2
 console.log("Left Shift Operator=",j)
-//output 384
+//output 384  //110000000
 
-let k=96<<2
+let k=97<<2
 console.log("Left Shift Operator=",k)
-//output 384
+//output 388 //110000100
 
 let i=92<<2
 console.log("Left Shift Operator=",i)
@@ -48,11 +48,11 @@ let n=250>>4
 console.log("Right Shift Operator=",n)
 //output 15
 
-let m=-76
-console.log("Non Shift Operator=",m)
-//output -76
+let o=20>>>2 
+console.log("Unsigned Operator Right Shift=",o)
+//output 5
 
-let n=76
-console.log("Non Shift Operator=",n)
+let p=-5>>>2
+console.log("Unsigned Operator Right Shift=",p)
 //output 76
  
