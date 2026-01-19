@@ -48,5 +48,11 @@ let n=250>>4
 console.log("Right Shift Operator=",n)
 //output 15
 
+let m=-76
+console.log("Non Shift Operator=",m)
+//output -76
 
+let n=76
+console.log("Non Shift Operator=",n)
+//output 76
  
