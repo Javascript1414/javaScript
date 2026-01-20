@@ -8,3 +8,10 @@ for (let b=5; b>-1; b--)
     console.log("Deceration:=",b)
 }
 
+
+
+
+
+
+
+
