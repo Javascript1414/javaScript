@@ -20,8 +20,8 @@ let h=80<<2
 console.log("Left Shift Operator=",h)
 //output 320 //101000000
 
-let i=136<<2
-console.log("Left Shift Operator=",i)
+let z=136<<2
+console.log("Left Shift Operator=",z)
 //output 544 //100100000
 
 let j=96<<2

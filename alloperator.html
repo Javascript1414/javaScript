@@ -8,7 +8,7 @@
 <body bgcolor="Pink">
     <h1><marquee>Operator</marquee></h1>
     <h2><center>Arithmetic Operation</center></h2>
-    <script>
+       <script>
         let x=50;
         let y=10;
         let addition=x+y;
@@ -64,6 +64,147 @@
     <br>
     <body bgcolor="blue">
      <h2><center>Comparision Operation</center></h2>
+     <script>
+         let a=86;
+        let b=85
+        document.write("Euqal to=",a==b,"<br>")
+        document.write("strictly equal to=",a===b,"<br>")
+        document.write("Not equal to=",a!=b,"<br>")
+        document.write("Strictly Not equal to=",a!==b,"<br>")
+        document.write("Greater Than=",a>b,"<br>")
+        document.write("less than=",a<b,"<br>")
+        document.write("Greater than or eual=",a>=b,"<br>")
+        document.write("Less than or equal=",a<=b,"<br>")
+     </script>
+
+     <h2><center>Assigment Operation</center></h2>
+     <script>
+        let o=15
+        document.write("Assigment=",o,"<br>")
+        //output 15
+
+        let z=10
+        z+=5
+        document.write("This is add=",z,"<br>")
+        //output 15
+
+        let c="Hello";
+        c+="World";
+        document.write("This is add word=",c,"<br>");
+        //output HelloWorld
+
+        let d=25
+        d-=5
+        document.write("This is subtract=",d,"<br>")
+        //outpu 20
+
+        let e=5
+        e*=5
+        document.write("This is Multiply=",e,"<br>")
+        //output 25
+
+        let f=25
+        f/=5
+        document.write("This is Divide=",f,"<br>")
+
+        let g=100
+        g*=10
+        document.write("This is Multiply=",g,"<br>")
+
+     </script>
+
+     <h2><center>Logical Operation</center></h2>
+     <script>
+         let q=60
+        let s=50
+        document.write(q>45 && s>42, "<br>")
+        //output true
+
+
+        
+
+        document.write(q>45 && s>50, "<br>")
+        //output false
+
+         document.write(q>45 || s>50,"<br>")
+        //output true
+
+        document.write(q>62 || s>51,"<br>")
+        //output false
+
+         let h=60
+         let i=50
+         let t=!(h>i)
+         let p=!(i>h)
+
+        document.write(t,"<br>")
+        // output false
+        document.write(p,"<br>")
+        //output true
+     </script>
+
+     <h2><center>String Operation</center></h2>
+    <script>
+        a="Soumyajit "
+        b="Santra"
+        document.write("Name=",a+b,'<br>')
+        //output Soumyajit Santra
+
+        let j="Hello"
+        let k="Sunny"
+        document.write("Name=",j+k,"<br>")
+        //output HelloSunny
+
+        e="Good "
+        e+="Morning"
+        document.write("Hello Guys=",e);
+        //output Good Morning
+    </script>
+
     
+     <h2><center>Ternary Operation</center></h2>
+     <script>
+        age=14;
+        let aadhaar = true;
+        let Voter = false;
+        y=(age >=18 && (aadhaar||Voter)) ?"you are eligible to vote":"you are not eligible to vote";
+        document.write(y,"<br>")
+        //output you are not eligible to vote
+
+        age=20;
+        let aadhaarid = true;
+        let Voterid = false;
+        y=(age >=18 && (aadhaar||Voter)) ?"you are eligible to vote":"you are not eligible to vote";
+        document.write(y)
+        //output you are eligible to vote
+     </script>
+
+     <h2><center>Type Operation</center></h2>
+     <script>
+      d=10
+        e="Soumo"
+        f=null
+        g=
+        h= true
+        let u
+        let big=25
+        let bigg=96n
+        let sym=Symbol("id")
+        document.write("This is type d=",typeof d,"<br>",
+            "This is type e=",typeof e,"<br>",
+            "This is type f=",typeof f,"<br>",
+            "This is type g=",typeof g,"<br>",
+            "This is type of h=",typeof h,"<br>",
+            "This is type of i=",typeof i,"<br>",
+             "This is type of big=",typeof big,"<br>",
+            "This is type of big=",typeof bigg,"<br>",
+             "This is type of symbol=",typeof sym,"<br>",
+     )
+     </script>
+
+     <h2><center>Bitwise Operation</center></h2>
+     <script>
+        
+     </script>
 </body>
 </html>

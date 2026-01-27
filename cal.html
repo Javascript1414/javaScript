@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body bgcolor="lIGHTGREY">
+    <h1><marquee>CALCULATOR HTML</marquee></h1>
+    <h2><center>CALCULATOR</center></h2>
+    <script>
+    function add(a, b) {
+    return a + b;
+}
+function subtract(a, b) {
+    return  a - b;  
+} 
+      
+function multiply(a, b) {
+    return a * b;
+}   
+function divide(a, b) {
+    if(b ===0){
+        console.log("not dicide by 0");
+    }
+    return a/b
+}
+function modulus(a, b) {
+    return a % b;
+}
+function power(a, b) {
+    return a**b;
+}
+function increment(a) {
+    return ++a;
+}  
+
+
+function calculator(a,operator,b){
+
+    switch(operator) {
+        case "+":
+            return add(a, b);
+        case "-":
+            return subtract(a, b);
+        case "*":
+            return multiply(a, b);
+        case "/":
+            return divide(a, b);
+        case "%":
+            return modulus(a, b);
+        case "**":
+            return power(a, b);
+        case "++":
+            return increment(a);
+        default:
+            return "Invalid operator";
+    }  
+}
+    document.write("Addition=", calculator(20, "+", 5),"<br>"); // Output: 25
+    document.write("Subtraction=", calculator(10, "-", 5),"<br>"); // Output: 5
+    document.write("Multiplication=", calculator(4, "*", 5),"<br>"); // Output: 20
+    document.write("Division=", calculator(20, "/", 0),"<br>"); // Output: 5
+    document.write("Modulus=", calculator(20, "%", 3),"<br>"); // Output: 2
+    document.write("Power=", calculator(2, "**", 3),"<br>"); // Output: 8
+    document.write("Increment=", calculator(10, "++")); // Output: 11
+    
+    </script>
+    
+</body>
+</html>
