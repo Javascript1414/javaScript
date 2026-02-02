@@ -10,4 +10,4 @@ function prime(e) {
         }
     }
 }
-console.log("",prime(9))
+console.log(prime(9));
