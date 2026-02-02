@@ -19,3 +19,4 @@ switch(operator) {
 }
 }
 calculator(10,"*",5);
+calculator(22,"+",2);
