@@ -30,7 +30,7 @@ console.log(Soumo.middle_Name)
 console.log(Soumo.Last_name)
 console.log(Soumo.Aadhaar)
 console.log(Soumo.Pan)
-console.log(Soumo.Email)
+console.log(Soumo.Email)   
 
 
         
