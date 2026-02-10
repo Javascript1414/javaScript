@@ -25,4 +25,3 @@ console.log(bullet.sound())
 console.log(Labrador.sound())
 
 
-
