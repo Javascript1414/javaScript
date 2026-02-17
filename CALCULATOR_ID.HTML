@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body bgcolor="Orange">
+    <h1><marquee>COMPUTER SOFTWARE APPLICATION</marquee></h1>
+    <H2><center>CALCULATOR</center></H2>
+    
+    NO1
+    <input id="No1"><br>
+    NO2
+    <input id="No2"><br>
+    operator
+    <input id="operator">
+    <button onclick="calculator()">SUBMIT</button>
+    <p id="Result">Result</p>
+    <Script>
+        function calculator(){
+        let x=parseInt(document.getElementById("No1").value);
+         let y=parseInt(document.getElementById("No2").value);
+          let operator=document.getElementById("operator").value;
+          let Result=""
+
+            switch(operator){
+                case "+":
+                    case"add":
+                        Result=x+y;
+                        break;
+
+                        case"-":
+                        case"subtraction":
+                        Result=x-y;
+                        break;
+
+                         case"*":
+                        case"multiply":
+                        Result=x*y;
+                        break;
+
+                         case"/":
+                        case"Division":
+                        Result=x/y;
+                        break;
+
+
+                        default:
+                            Result="Please Provide operator";
+            }
+            document.getElementById("Result").
+            innerHTML=Result;
+          }
+    </Script>
+
+</body>
+</html>
