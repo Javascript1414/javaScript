@@ -15,25 +15,29 @@
 switch(operator) {
     case "+":
     case "add":
-    document.write("Result = "+(a + b)+"<br>")
+    document.write("Result Addition= "+(a + b)+"<br>")
     break;
 
     case "-":
     case "subtract":
-    document.write("Result = "+(a - b)+"<br>");
+    document.write("Result Subtract= "+(a - b)+"<br>");
     break
     
     case "*":
     case "multiply":
-    document.write("Result = "+(a * b)+"<br>");
+    document.write("Result Multiply= "+(a * b)+"<br>");
     break;
 
     case "/":
         case "Division":
-        document.write("Result = "+(a/b)+"<br>")
+        document.write("Result Division= "+(a/b)+"<br>")
         break;
+    
+        case"**":
+        case "Exponentation":
+            document.write("Result Exponentation = "+(a**b)+"<br>")
 
-
+            
 
     
 }
@@ -42,6 +46,15 @@ calculator(15,"+",10)
 calculator(45,"-",10)
 calculator (10,"*",5)
 calculator (10,"/",5)
+calculator (10,"**",2)
+
+calculator (30,"Division",2)
+calculator (30,"multiply",2)
+calculator (30,"subtract",2)
+calculator (30,"add",2)
+calculator (5,"Exponentation",2)
+
+
     </SCRIPT>
     
 </body>
