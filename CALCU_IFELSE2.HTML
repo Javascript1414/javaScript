@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body bgcolor="Lightblue">
+    <h1><marquee>COMPUTER SOFTWARE APPLICATION</marquee></h1>
+    <H2><center>CALCULATOR IF-ELSE</center></H2>
+    
+    Num1
+    <input id="Num1"><br>
+    Num2
+    <input id="Num2"><br>
+    operator
+    <input id="operator">
+    <button onclick="calculator()">SUBMIT</button>
+    <p id="Result">Result</p>
+    <Script>
+        function calculator(){
+        let x=parseInt(document.getElementById("Num1").value);
+         let y=parseInt(document.getElementById("Num2").value);
+          let operator=document.getElementById("operator").value;
+          let Result=""
+
+            if (operator === "+" || operator ==="Add"){
+                 Result = x+y
+
+            } 
+
+            else if (operator == "-" || operator=="Subtraction"){
+                Result = x-y
+            } 
+
+
+
+
+            
+            else if (operator == "*" || operator =="Mutiple"){
+                Result = x*y
+            }
+
+            else if (operaor == "/" || operator=="Division"){
+                Result = x/y
+            }
+
+            else {
+                Result = "Invalid Operator"
+            }
+            document.getElementById("Result").
+            innerHTML=Result;
+
+           }
+           
+          
+    </Script>
+
+</body>
+</html>
