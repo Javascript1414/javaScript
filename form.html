@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+</head>
+<body>
+    <h1>LOGIN FROM</h1>
+    <form onsubmit="return validation()">
+      Name:<br>
+      <input type="text" id="Name" placeholder="Enter Your Name"><br><br>
+      
+      Mobile No:<br>
+      <input type="text" id="mobile" placeholder="Enter your Mobile number"><br><br>
+
+      Email:<br>
+      <input type="text" id="Email" placeholder="Enter your Email Address"><br><br>
+
+
+      <input type="submit" value="submit">
+    </form>
+    <script>
+        function validation(){
+            var Name=document.getElementById("Name").value;
+            var mobile=document.getElementById("mobile").value;
+            var Email=document.getElementById("Email").value;
+
+            //name vcalidation
+            if(Name==""){
+                alert("Please Enter Your Name");
+                return false;
+            }
+
+            //Mobile no validation
+            if(mobile.length !=10|| isNaN(mobile)){
+                alert("Please enter your valid mobile Number")
+                return false;
+            }
+
+            //Email Validation
+            if(Email==""|| !Email.includes("@")||!Email.includes(".")){
+                alert("Please Enter your email")
+                return false;
+            }
+
+            //from submission
+            alert("From Submission Successfully")
+            return true;
+
+            }
+
+        
+    </script>
+
+
+    
+</body>
+</html>
