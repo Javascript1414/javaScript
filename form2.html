@@ -17,6 +17,9 @@
       Email:<br>
       <input type="text" id="Email" placeholder="Enter your Email Address"><br><br>
 
+      Password:<br>
+      <input type="Password" id="Password" placeholder="Enter Your Password"><br><br>
+
 
       <input type="submit" value="submit">
     </form>
@@ -25,6 +28,7 @@
             var Name=document.getElementById("Name").value;
             var mobile=document.getElementById("mobile").value;
             var Email=document.getElementById("Email").value;
+            var password=document.getElementById("Password").value
 
             //name vcalidation
             if(Name==""){
@@ -42,6 +46,12 @@
             if(Email==""|| !Email.includes("@")||!Email.includes(".")){
                 alert("Please Enter your email")
                 return false;
+            }
+
+            //Password
+            if(Password==""){
+            alert("Please inter your password")
+            return false;
             }
 
             //from submission
