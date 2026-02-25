@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">GET DATA</button>
+    <script>
+        let button=document.getElementById("button");
+        button.addEventListener("click",sribas);
+
+        function sribas(){
+            let b=new XMLHttpRequest();
+            b.open("Get","soumo.txt",true)
+            b.onreadystatechange= function(){
+                if(this.readyState==4 && this.status==200){
+                    console.log(this.responseText);
+                }else if(this.status==404){
+                    console.log("page not found")
+                }
+            }
+            b.send();
+        }
+    </script>
+</body>
+</html>
