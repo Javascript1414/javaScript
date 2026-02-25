@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSTI HOWRAH</title>
+
+</head>
+<body>
+    Name
+    <input id="Name" placeholder="Enter Your name"><br><br>
+    Address
+    <input id="Address" placeholder="Enter Your address"><br><br>
+    Age
+    <input id="Age" placeholder="Enter Your Age"><br><br>
+    <button onclick="check()">SUBMIT</button>
+   
+    <SCRIPT>
+        function check(){
+
+            let Name=document.getElementById("Name").value;
+            let Address=document.getElementById("Address").value;
+            let Age=parseInt(document.getElementById("Age").value)
+     
+
+
+            if(Name==""){
+                alert("Please Enter Your Name")
+                return false;
+            }
+
+                if(Address==""){
+                    alert("Please enter Your address")
+                    return false;
+                }
+
+                if(!isNaN(Age) && Age>=18){
+                    alert("Tum Adult Ho gaya ho")
+                    return false;
+                }
+                   else{
+                    alert("Tum Abhi bacca ho")
+                }
+                     
+                
+                }
+            
+
+        
+        
+    </SCRIPT>
+    
+</body>
+</html>
+
+
+
